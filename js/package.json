@@ -1,0 +1,9 @@
+{
+  "name": "palavrao",
+  "version": "1.0.0",
+  "description": "Detecta termo \"evitável\" em português",
+  "main": "index.js",
+  "repository": "https://github.com/kyriosdata/palavrao",
+  "author": "Fábio Nogueira de Lucena",
+  "license": "Apache 2.0"
+}
