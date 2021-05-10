@@ -1,6 +1,13 @@
 {
   "name": "palavrao",
-  "version": "1.0.3",
+  "keywords": [
+    "chulo",
+    "profano",
+    "grosseiro",
+    "politicamente incorreto",
+    "feio"
+  ],
+  "version": "1.0.4",
   "description": "Detecta termo \"evitável\" em português",
   "main": "index.js",
   "repository": "https://github.com/kyriosdata/palavrao",
