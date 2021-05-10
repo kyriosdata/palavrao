@@ -1,8 +1,6 @@
 ## palavrao
 
-Um "detector" de palavras "evitáveis".
-
-> Sugestões (acréscimo ou remoção) são bem-vindas.
+Um detector de palavras "evitáveis". Sugestões (acréscimo e/ou remoção) são bem-vindas.
 
 ## Instalação
 
