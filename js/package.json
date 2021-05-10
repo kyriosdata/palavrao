@@ -1,6 +1,6 @@
 {
   "name": "palavrao",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Detecta termo \"evitável\" em português",
   "main": "index.js",
   "repository": "https://github.com/kyriosdata/palavrao",
