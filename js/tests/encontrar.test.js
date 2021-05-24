@@ -1,6 +1,6 @@
 const { evitavel } = require("../src/index");
 
-test("palavra em branco não é palavrão", () => {
+test("palavra em branco não precisa ser evitada", () => {
   expect(evitavel()).toBe(false);
   expect(evitavel("")).toBe(false);
   expect(evitavel("  ")).toBe(false);

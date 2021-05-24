@@ -15,9 +15,16 @@
   "license": "MIT",
   "type": "module",
   "devDependencies": {
+    "@babel/preset-env": "^7.14.2",
+    "babel-jest": "^26.6.3",
     "jest": "^26.6.3"
   },
   "scripts": {
     "test": "jest --watch"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }

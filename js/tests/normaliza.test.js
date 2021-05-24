@@ -1,4 +1,4 @@
-const { normaliza } = require("../src/index");
+import { normaliza } from "../src/index.js";
 
 test("palavra normalizada não se altera", () => {
   expect(normaliza("")).toBe("");
@@ -30,5 +30,6 @@ test("null ou indefined é string vazia", () => {
 });
 
 test("vários ajustes", () => {
+  expect(normaliza(" À   ")).toBe("a");
   expect(normaliza("  aÇaí    produz  fRUTO  ")).toBe("acai produz fruto");
 });
