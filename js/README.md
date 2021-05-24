@@ -16,3 +16,8 @@ import { evitavel } from "palavrao";
 console.log(evitavel("amor")); // deve retorar "false"
 
 ```
+
+## Desenvolvimento
+
+- `npm install`
+- `npm run test`
