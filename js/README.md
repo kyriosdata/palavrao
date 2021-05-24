@@ -4,17 +4,15 @@ Um detector de palavras "evitáveis". Sugestões (acréscimo e/ou remoção) sã
 
 ## Instalação
 
-`npm install palavrao`
+- `npm install palavrao`
+- Verifique se seu projeto Node tem como "type" o valor "module" em **package.json**.
 
 ## Uso
 
 ```js
-const evitar = require("palavrao");
+import { evitavel } from "palavrao";
 ...
 
+console.log(evitavel("amor")); // deve retorar "false"
 
-if (evitar(palavra)) {
-    // Esta palavra foi considerada 'evitável'
-    // Você pode ignorá-la, substituí-la por '*', ...
-}
 ```

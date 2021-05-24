@@ -1,4 +1,3 @@
-// const palavroes = require("./palavroes.json");
 import palavroes from "./palavroes.js";
 
 /**
@@ -38,10 +37,5 @@ function normaliza(palavra) {
   const semEspacos = removeExtremidades.replace(/\s\s+/g, " ");
   return semEspacos.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
-
-// module.exports = {
-//   evitavel,
-//   normaliza,
-// };
 
 export { evitavel, normaliza };
