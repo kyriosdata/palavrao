@@ -13,3 +13,4 @@ A principal fonte é a lista de termos inválidos disponível em documento técn
 - [fontes](fontes) contém alguns scripts empregados durante a preparação da base de dados (palavrões).
 - [js](js) contém a implementação em JavaScript. Esta implementação pode ser usada tanto por um navegador quanto via Nodejs, conforme ilustrado.
 - [wa](https://github.com/kyriosdata/wa) é um projeto equivalente, contudo, ilustra como realizar a mesma operação realizada via WebAssembly.
+- [uso](uso) ilustra emprego tanto via _navegador_ quanto _nodejs_.
