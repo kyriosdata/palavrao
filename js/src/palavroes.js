@@ -1,4 +1,4 @@
-[
+export default [
   "arrombada",
   "arrombadas",
   "arrombado",
@@ -230,5 +230,5 @@
   "xumbrega",
   "xupaxota",
   "xupeta",
-  "xupetinha"
-]
+  "xupetinha",
+];

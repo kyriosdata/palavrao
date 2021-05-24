@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Verifica palavrão</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <script type="module">
+      import { normaliza, evitavel } from "./src/index.js";
+      const botao = document.getElementById("botao");
+      botao.addEventListener("click", () => {
+        const palavra = document.getElementById("entrada").value;
+        const resposta = evitavel(palavra) ? "SIM" : "NÃO";
+        document.getElementById("resposta").innerHTML = resposta;
+      });
+    </script>
+    <h1>Testa palavrão</h1>
+    <input id="entrada" type="text" />
+    <button id="botao">Verifique</button>
+    <p><strong>Deveria evitá-la? </strong><span id="resposta"></span></p>
+  </body>
+</html>

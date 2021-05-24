@@ -9,4 +9,4 @@ A principal fonte é a lista de termos inválidos disponível em documento técn
 ## Implementações previstas
 
 - JavaScript ([js](js))
-- WASM (veja projeto [wa](https://github.com/kyriosdata/wa).
+- WASM (veja projeto [wa](https://github.com/kyriosdata/wa)).

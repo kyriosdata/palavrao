@@ -1,23 +1,47 @@
-const palavroes = require("./palavroes.json");
+// const palavroes = require("./palavroes.json");
+import palavroes from "./palavroes.js";
 
 /**
- * Verifica se a palavra fornecida é um termo a ser evitado, ou seja, considerado
- * 'chulo'.
+ * Verifica se a palavra fornecida é um termo que pode
+ * ser evitado.
  *
- * @param {string} palavra Termo que pode ser considerado 'chulo' ou 'evitável'.
+ * OBSERVAÇÃO: não há pretensão alguma de exercer censura a um ou outro
+ * termo. Caso não considere uma determinada palavra uma palavra "evitável",
+ * então poderá removê-la do conjunto de palavras e, no sentido inverso,
+ * caso conheça outras que devam ser acrescentadas, faça o devido
+ * acréscimo.
+ *
+ * @param {string} palavra Termo que pode ser considerado "evitável".
  * @returns Verdadeiro se a palavra é considerada evitável e falso, caso não seja considerada um 'palavrão'.
  */
-function evitar(palavra) {
-  if (!palavra) {
-    return false;
-  }
+function evitavel(palavra) {
+  const procurePor = normaliza(palavra);
 
-  const semEspacos = palavra.trim();
-  if (semEspacos.length == 0) {
-    return false;
-  }
-
-  return palavroes.includes(semEspacos.toLowerCase());
+  return palavroes.includes(procurePor);
 }
 
-module.exports = evitar;
+/**
+ * Normaliza a palavra para o seu emprego para a busca.
+ *
+ * @param {string} palavra Palavra a ser normalizada.
+ * @returns Palavra fornecida sem acentos, letras minúsculas, espaços removidos e outras.
+ * Se não for fornecida palavra, null ou undefined, então palavra retornada
+ * será "".
+ */
+function normaliza(palavra) {
+  if (!palavra) {
+    return "";
+  }
+
+  const minusculas = palavra.toLowerCase();
+  const removeExtremidades = minusculas.trim();
+  const semEspacos = removeExtremidades.replace(/\s\s+/g, " ");
+  return semEspacos.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+// module.exports = {
+//   evitavel,
+//   normaliza,
+// };
+
+export { evitavel, normaliza };
