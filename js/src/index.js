@@ -1,6 +1,36 @@
 import palavroes from "./palavroes.js";
 
 /**
+ * Executa busca do elemento no vetor fornecido empregando
+ * a função de comparação fornecida.
+ *
+ * @param {vector} vetor Vetor contendo strings.
+ * @param {string} elemento Sequência de caracteres a ser procurada.
+ *
+ * @returns O valor positivo correspondente à posição do elemento
+ * no vetor ou um valor negativo, cujo valor em módulo identifica a
+ * posição em que o elemento, se for o caso, deveria ser inserido.
+ */
+function buscaBinaria(vetor, elemento) {
+  const compara = (a, b) => a.localeCompare(b);
+  var m = 0;
+  var n = vetor.length - 1;
+  while (m <= n) {
+    var k = (n + m) >> 1;
+    var cmp = compara(elemento, vetor[k]);
+    if (cmp > 0) {
+      m = k + 1;
+    } else if (cmp < 0) {
+      n = k - 1;
+    } else {
+      return k;
+    }
+  }
+
+  return -n - 1;
+}
+
+/**
  * Verifica se a palavra fornecida é um termo que pode
  * ser evitado.
  *
@@ -16,7 +46,12 @@ import palavroes from "./palavroes.js";
 function evitavel(palavra) {
   const procurePor = normaliza(palavra);
 
-  return palavroes.includes(procurePor);
+  const posicao = buscaBinaria(palavroes, procurePor);
+  if (posicao == 0) {
+    return palavra == palavroes[0];
+  }
+
+  return posicao > 0;
 }
 
 /**
@@ -38,4 +73,4 @@ function normaliza(palavra) {
   return semEspacos.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
-export { evitavel, normaliza };
+export { evitavel, normaliza, palavroes, buscaBinaria };
