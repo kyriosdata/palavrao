@@ -1,6 +1,6 @@
 # palavrao
 
-Filtro para palavrão, palavra obscena, termo chulo e outros "evitáveis" em português.
+Filtro para palavrão, palavra obscena, termo chulo ou termo considerado "evitável" em português.
 O filtro possui duas funções básicas:
 - identificar se uma palavra fornecida é considerada palavrão, ou seja, a função **evitavel(palavra)** retorna verdadeiro ou falso, e
 - substituir caracteres que correspondem a um palavrão por um caractere fornecido em uma sequência também fornecida, por exemplo, **mascara(sequencia, "\*")** retorna uma sequência de caracteres onde aqueles correspondentes a palavrões, se identificados, são substituídos pelo caractere **\***. 
