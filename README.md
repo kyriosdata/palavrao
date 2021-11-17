@@ -1,15 +1,16 @@
 # palavrao
 
-Filtro para palavrão, palavra obscena, termo chulo ou termo considerado "evitável" em português.
-O filtro possui duas funções básicas:
-- identificar se uma palavra fornecida é considerada palavrão, ou seja, a função **evitavel(palavra)** retorna verdadeiro ou falso, e
-- substituir caracteres que correspondem a um palavrão por um caractere fornecido em uma sequência também fornecida, por exemplo, **mascara(sequencia, "\*")** retorna uma sequência de caracteres onde aqueles correspondentes a palavrões, se identificados, são substituídos pelo caractere **\***. 
+Filtro para palavrão, palavra obscena, termo chulo ou termo considerado "evitável" em português. Isto é útil, por exemplo, para filtrar termos em trocas de mensagens, cadastro de nomes de usuários e cadastro de emails, dentre outros cenários.
 
-Este projeto não tem a pretensão de ser exaustivo, absoluto, perfeito, nem tampouco censurador.
+> Este projeto não tem a pretensão de ser exaustivo, absoluto, perfeito, nem tampouco censurador. Use-o apenas caso considere apropriado. Sua contribuição também é bem-vinda.
+
+O filtro é oferecido por meio de duas funções básicas:
+- identificar se uma palavra fornecida é considerada palavrão, ou seja, a função **evitavel(palavra)** retorna verdadeiro ou falso conforme a palavras fornecida seja considerada "evitável" ou não, e
+- substituir caracteres que correspondem a um palavrão por um caractere fornecido em uma sequência também fornecida, por exemplo, **mascara(sequencia, "\*")** retorna uma sequência de caracteres onde aqueles correspondentes a palavrões, se identificados, são substituídos pelo caractere **\***. 
 
 Um projeto de propósito similar para a língua inglesa é o [badwords](https://github.com/web-mech/badwords).
 
-A principal fonte foi a lista de termos "inválidos" disponível em documento técnico do DATASUS (Ministério da Saúde), a Especificação Técnica para Integração PIX-PDQ com o Cartão Nacional de Saúde V5.
+A principal fonte foi a lista de termos "inválidos" disponível no documento "Especificação Técnica para Integração PIX-PDQ com o Cartão Nacional de Saúde V5" produzido pelo DATASUS (Ministério da Saúde).
 
 ## Organização
 
