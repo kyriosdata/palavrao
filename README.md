@@ -14,6 +14,7 @@ A principal fonte foi a lista de termos "inválidos" disponível no documento "E
 
 ## Organização
 
+- Dissertação [mestrado](https://alib.ufba.br/sites/alib.ufba.br/files/benke_vanessa._tabus_linguisticos.pdf) pode identificar outras fontes. 
 - [fontes](fontes) contém alguns scripts empregados durante a preparação da base de dados (palavrões).
 - [js](js) contém a implementação em JavaScript. Esta implementação pode ser usada tanto por um navegador quanto via Nodejs, conforme ilustrado.
 - [wa](https://github.com/kyriosdata/wa) é um projeto equivalente, contudo, ilustra como realizar a mesma operação realizada via WebAssembly.
