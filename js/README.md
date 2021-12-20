@@ -1,13 +1,12 @@
 ## palavrao
 
-Um detector de palavras "evitáveis". Sugestões (acréscimo e/ou remoção) são bem-vindas.
+Um detector de palavras "evitáveis", ou "palavrões". Sugestões (acréscimo e/ou remoção) são bem-vindas.
 
 Veja publicação em https://www.npmjs.com/package/palavrao
 
 ## Instalação
 
 - `npm install palavrao`
-- Verifique se seu projeto Node tem como "type" o valor "module" em **package.json**.
 
 ## Uso
 

@@ -1,6 +1,6 @@
 ## Objetivo
 
-Ilustra uso do npm package **palavrao**.
+Ilustra uso do npm package [palavrao](https://www.npmjs.com/package/palavrao).
 
 ## Uso
 
