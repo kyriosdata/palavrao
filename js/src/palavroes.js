@@ -1,3 +1,6 @@
+/**
+ * Base de dados (palavrões) em arquivo JavaScript.
+ */
 export default [
   "arrombada",
   "arrombadas",
@@ -20,7 +23,6 @@ export default [
   "boquinha de veludo",
   "borboleta",
   "bosta",
-  "brasileirinhas",
   "brecheca",
   "bucefula",
   "buceta",

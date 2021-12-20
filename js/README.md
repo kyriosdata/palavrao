@@ -25,8 +25,9 @@ console.log(evitavel("amor")); // deve retorar "false"
 
 ## Inserção de nova palavra na lista de evitáveis
 
-- Use o utilitário `atualiza.js`.
-- Substitua `palavroes.js` por `novo.js` (gerado no passo anterior)
+- Execute `node atualiza.js termoChulo`. Isto fará com que "termoChulo"
+  seja inserido na base de dados criada no arquivo `novo.js`.
+- Renomeie `novo.js` (gerado no passo anterior) para `palavroes.js` (base de dados empregada)
 - Atualize `package.json` com nova versão
 - `npm login`
 - `npm publish`
