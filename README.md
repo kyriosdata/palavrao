@@ -6,6 +6,17 @@ Filtro para palavrão, palavra obscena, termo chulo ou termo considerado "evitá
 
 Um projeto de propósito similar para a língua inglesa é o [badwords](https://github.com/web-mech/badwords).
 
+## Design
+
+Uma lista de palavras consideradas “evitáveis” ou “palavrões” será mantida em uma base (arquivo texto). Esta lista é considerada "estável".
+
+Um aplicativo deve ser fornecido para atualizar a lista em conformidade com as expectativas da busca, por exemplo, ordenação para agilizar a consulta, remoção de acentos e outros. Desta forma,
+atualização manual e propensa a erros é evitada.
+
+Uma função deve carregar o conteúdo da lista e permitir a realização de consultas. A expectativa é que a verificação seja realizada em um cliente web e, dessa forma, a implementação correspondente deve estar disponível via npm package (https://npmjs.com).
+
+A ilustração de uso tanto para o desenvolvedor quanto para o usuário deve ser fornecida.
+
 ## Implementação em JavaScript
 
 Encontra-se disponível via npm package [palavrao](https://www.npmjs.com/package/palavrao).
@@ -14,6 +25,7 @@ A implementação está no diretório [js](js).
 ## Uso
 
 Consulte [uso](uso) para ilustração de emprego tanto via _navegador_ quanto _nodejs_.
+
 Você pode experimentar por meio da página https://kyriosdata.github.io/palavrao.
 
 ## Fontes (termos "inválidos")
