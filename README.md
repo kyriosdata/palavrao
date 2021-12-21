@@ -14,6 +14,7 @@ A implementação está no diretório [js](js).
 ## Uso
 
 Consulte [uso](uso) para ilustração de emprego tanto via _navegador_ quanto _nodejs_.
+Você pode experimentar por meio da página https://kyriosdata.github.io/palavrao.
 
 ## Fontes (termos "inválidos")
 
